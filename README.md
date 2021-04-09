@@ -2,7 +2,7 @@
 
 >2021년 SSAFY 2학기 특화프로젝트
 >
->- [소개영상]()
+>- [소개영상](https://youtu.be/udTZicdGTxs)
 
 ---
 
@@ -30,7 +30,8 @@
   - **아리(ARI) 구연동화**
   - AI + AR 기술이 합성된 것을 상징적으로 표현
   - Ari를 지혜를 상징하는 부엉이 모습으로 캐릭터화
-
+- 소개영상
+  - https://youtu.be/udTZicdGTxs
 
 
 ## :computer: Tech Stack
