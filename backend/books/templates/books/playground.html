@@ -1,0 +1,71 @@
+{% load static %}
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="{% static 'books/fonts/icomoon/style.css' %}" />
+<link rel="stylesheet" href="{% static 'books/css/bootstrap.min.css' %}" />
+<link rel="stylesheet" href="{% static 'books/css/jquery-ui.css' %}" />
+<link rel="stylesheet" href="{% static 'books/css/owl.carousel.min.css' %}" />
+<link
+  rel="stylesheet"
+  href="{% static 'books/css/owl.theme.default.min.css' %}"
+/>
+<link
+  rel="stylesheet"
+  href="{% static 'books/css/owl.theme.default.min.css' %}"
+/>
+<link
+  rel="stylesheet"
+  href="{% static 'books/css/jquery.fancybox.min.css' %}"
+/>
+<link
+  rel="stylesheet"
+  href="{% static 'books/css/bootstrap-datepicker.css' %}"
+/>
+<link
+  rel="stylesheet"
+  href="{% static 'books/fonts/flaticon/font/flaticon.css' %}"
+/>
+<link rel="stylesheet" href="{% static 'books/css/aos.css' %}" />
+<link rel="stylesheet" href="{% static 'books/css/style.css' %}" />
+
+<!--화면 시작-->
+<h1 class="heading">놀이터</h1>
+<!-- AR.js by @jerome_etienne - github: https://github.com/jeromeetienne/ar.js - info: https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf -->
+<!--a-frame 추가-->
+<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+
+<!--body-->
+<div class="camera-wrapper">
+  <!--Creating a 3D Scene-->
+  <a-scene embedded arjs>
+    <!--Adding Simple Content-->
+    <a-assets>
+      <img id="ari" src={% static 'img/Ari.png'%}>
+      <a-asset-item id="donut" src={% static 'obj/pink_glazed_donut/scene.gltf'%}></a-asset-item>
+    </a-assets>
+
+  <!-- Using the asset management system. -->
+    <!--Adding the AR -->
+    <a-marker preset="pattern" type="pattern" url={% static 'marker/ari.patt'%}>
+      
+      <a-gltf-model src="#donut"></a-gltf-model>
+      {% comment %} <a-image src="#ari" height="-1.5"></a-image> {% endcomment %}
+    </a-marker>
+  </a-scene>
+</div>
+<div id="btn-back" class="btn btn-primary" 
+      onclick="location.href='{% url 'books:index' %}'">← 뒤로가기</div>
+
+<style>
+    #btn-back {
+      position: fixed;
+      left: 1%;
+      right: 0;
+      top: 1%;
+      text-align: center;
+    }
+</style>

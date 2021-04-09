@@ -1,0 +1,1 @@
+python3 main.py -c config.yaml -d /home/team1/test/speak_image/VC/preprocessed -train_set train -train_index_file train_samples_128.json -store_model_path /home/team1/test/vc_model -t checkpoints -iters 2000000 -summary_step 500

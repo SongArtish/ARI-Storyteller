@@ -1,0 +1,3 @@
+ffmpeg
+g2pk
+python-mecab-ko
