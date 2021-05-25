@@ -1,4 +1,4 @@
-# 아리 구동화 (Ari Storytelling)
+# 아리 구연동화 (Ari Storytelling)
 
 >2021년 SSAFY 2학기 특화프로젝트
 >
