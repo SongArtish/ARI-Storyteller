@@ -1,3 +1,5 @@
+
+
 # 아리 구연동화 (Ari Storytelling)
 
 >2021년 SSAFY 2학기 특화프로젝트
@@ -10,11 +12,26 @@
 
 ---
 
+## :computer: Tech Stack
+
+- Frontend
+  - Django
+  - HTML, CSS
+  - Bootstrap
+- Backend
+  - Django
+  - Android
+- Techinques
+  - Image Captioning
+  - Text-to-Speech
+  - Voice Conversion
+  - Augmented Reality
+
 ![Ari Storytelling](Docs/img/index.png)
 
 
 
-## Intro
+## :pushpin: Intro
 
 - 개발기간: 2021년 3월 8일 - 2021년 4얼 9일
 - 프로젝트 배경
@@ -34,15 +51,14 @@
   - https://youtu.be/udTZicdGTxs
 
 
-## :computer: Tech Stack
 
-- Frontend
-  - Django
-  - HTML, CSS
-  - Bootstrap
-- Backend
-  - Django
-  - Android
+## :page_facing_up: ERD
+
+![ERD](Docs/TWD/resource/0312_ERD.png)
+
+## :black_square_button: Wireframe
+
+> [와이어프레임 문서](Docs/TWD/ARI_와이어프레임.pdf) 참고!
 
 
 
